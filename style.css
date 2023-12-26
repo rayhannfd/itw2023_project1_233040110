@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -9,7 +15,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0, 7), rgba(0, 0, 0, 0, 7));
-    background-image: url(img/windows.jpg);
+    background-image: url(img/backgroundajah.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,19 +25,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px 8% 0 8%;
-
+    padding: 13px 8% 0 5%;
+    font-family: Helvetica, sans-serif;
 }
 
 .logo {
     color: gainsboro;
-    font-size: 35px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
 span {
-    color: royalblue;
+    color: blue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
 }
 
 nav ul li {
@@ -46,8 +56,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white;
-    transition: 1s;
+    color: royalblue;
+    transition: 0, 9s;
 }
 
 .content {
@@ -59,13 +69,14 @@ nav ul li a:hover {
 
 h1 {
     color: white;
-    font-size: 45px;
-    margin: 10px 0px 10px;
+    font-size: 25px;
+    margin: 10px 350px;
 }
 
 h3 {
     color: white;
     font-size: 15px;
+    margin: 10px 350px;
     margin-bottom: 25px;
 }
 
@@ -73,20 +84,22 @@ h4 {
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
+    margin: 10px 350px;
 }
 
 .about {
     width: 100%;
-    padding: 100px 0px;
+    padding: 140px 0px;
     background-color: black;
 }
 
 .about img {
-    width: 500px;
+    width: 300px;
 }
 
 .about-text {
     width: 550px;
+    margin-left: 60px;
 }
 
 .main {
@@ -104,6 +117,7 @@ h4 {
     font-size: 40px;
     margin-bottom: 25px;
     text-transform: capitalize;
+    margin-left: 50px;
 }
 
 .about-text h5 {
@@ -121,6 +135,7 @@ h4 {
     line-height: 30px;
     font-size: 20px;
     margin-bottom: 45px;
+    text-align: left;
 }
 
 .service {
@@ -136,6 +151,7 @@ h4 {
     width: 1130px;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .box {
@@ -154,6 +170,10 @@ h4 {
     margin: 15px;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card i {
@@ -178,19 +198,150 @@ h5 {
 
 }
 
-.card .button {
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border: 7px solid transparent;
-    font-weight: bold;
-    padding: 22px;
-    border-radius: 75px;
+.sertifikat {
+    background: black;
+    width: 100%;
+    font-size: 60px;
+    padding: 140px 98px;
 }
 
-.card .button:hover {
-    background-color: rgb(11, 11, 119);
-    border: 3px solid transparent;
-    cursor: pointer;
+.sertif h2 {
+    color: white;
+    font-size: 40px;
+    width: 1130px;
+    text-align: center;
+    padding: 90px;
 }
+
+.bnsp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.serti1,
+.serti2 {
+    width: 40%;
+}
+
+img {
+    width: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-text h2 {
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    padding-top: -70px;
+}
+
+.contact-text h4 {
+    margin: 15px 0;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.contact-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: gainsboro;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.contact-icons a:hover {
+    color: blue;
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: gainsboro;
+    color: black;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 14px 60px;
+    background: red;
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 100;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px red, 0 0 25px blue;
+}
+
+.contact-form .Send:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+}
+
+.footer {
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.footer .copy {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+

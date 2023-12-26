@@ -2,64 +2,108 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PORTOFOLIO RAIHAN</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
 
 <body>
     <div class="hero">
         <nav>
-            <h2 class="logo">Porto<span>Folio</span></h2>
+            <h2 class="logo">PORTO<span>FOLIO</span></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tentang Saya</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Sertifikat</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a href="#tentangsaya">Tentang Saya</a></li>
+                <li><a href="#service">My Skill</a></li>
+                <li><a href="#sertifikat">Sertifikat</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
         <div class="content">
-            <h4>Lorem, ipsum dolor.</h4>
-            <h1>Lorem ipsum.</h1>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h4>Hallo! Nama Saya<h4>
+                    <h1>Raihan Fadhil Hibatullah.</h1>
+                    <h3>Saya Seorang Web Designer, Web Developer dan Network Engineer</h3>
         </div>
     </div>
+    <div id="tentangsaya"></div>
     <div class="about">
         <div class="main">
-            <img src="img/eye.jpg">
+            <img src="img/IMG_20231009_182541.jpg">
             <div class="about-text">
                 <h2>Tentang Saya</h2>
-                <h5>Web Developer & Network Engineering</h5>
-                <p>Lorem ipsum dolor sit amet.</p>
-
+                <p>Saya adalah seorang Mahasiswa di Universitas Pasundan. Saya tertarik dengan hal yang berbau
+                    Programming dan
+                    Jaringan dan Saya Tinggal di Bandung</p>
             </div>
         </div>
     </div>
+    <div id="service"></div>
     <div class="service">
         <div class="title">
-            <h2>My Service</h2>
+            <h2>My Skill</h2>
         </div>
         <div class="box">
             <div class="card">
                 <i class="fa-solid fa-desktop"></i>
                 <h5>Web Development</h5>
                 <div class="txt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Mengerjakan Hal Yang Berhubungan Dengan Web Adalah Keahlian Saya</p>
                     <p style="text-align: center;"></p>
-                    <a href="#" class="button">Read More</a>
                 </div>
             </div>
             <div class="card">
                 <i class="fa-solid fa-wifi"></i>
                 <h5>Network Engineering</h5>
                 <div class="txt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Mengerjakan Hal Yang Berhubungan Dengan Jaringan Adalah Keahlian Saya</p>
                     <p style="text-align: center;"></p>
-                    <a href="#" class="button">Read More</a>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="sertifikat"></div>
+    <div class="sertifikat">
+        <div class="sertif">
+            <h2>- Sertifikat -</h2>
+        </div>
+        <div class="bnsp">
+            <div class="serti1">
+                <img src="img/BNSP RAIHAN 1.svg">
+            </div>
+            <div class="serti2">
+                <img src="img/BNSP RAIHAN 2.svg">
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="Kontak">
+        <div id="kontak"></div>
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <div class="contact-list">
+                <p><i class="fa-regular fa-envelope"></i>raihanfh7@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>081280359556</p>
+            </div>
+            <div class="contact-icons">
+                <a href="https://instagram.com/rayhannfd"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/raihan-fadhil-hibatullah-784625298/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Nomor Handphone">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Pesan Anda"></textarea>
+                <input type="submit" value="Submit" class="Send">
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <p class="copy">Copyright 2023. Raihan Fadhil H.</p>
     </div>
 </body>
 
