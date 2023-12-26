@@ -95,6 +95,7 @@ h4 {
 
 .about img {
     width: 300px;
+    border-radius: 55%;
 }
 
 .about-text {
@@ -257,6 +258,14 @@ img {
     margin-bottom: 3rem;
 }
 
+.contact-list a {
+    color: white;
+}
+
+.contact-list a:hover {
+    color: royalblue;
+}
+
 .contact-list p {
     margin-top: 20px;
     color: white;
@@ -344,4 +353,3 @@ form textarea {
     text-align: center;
     font-size: 12px;
 }
-
